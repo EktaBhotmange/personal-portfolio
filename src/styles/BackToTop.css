@@ -1,0 +1,44 @@
+.back-to-top {
+  position: fixed;
+
+  bottom: 30px;
+  right: 30px;
+
+  width: 55px;
+  height: 55px;
+
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.2rem;
+  color: white;
+
+  z-index: 1000;
+
+  background: linear-gradient(
+    135deg,
+    #ec4899,
+    #8b5cf6,
+    #2563eb
+  );
+
+  box-shadow:
+    0 0 15px rgba(236, 72, 153, 0.3),
+    0 0 25px rgba(56, 189, 248, 0.2);
+
+  transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+  transform: translateY(-5px) scale(1.08);
+
+  box-shadow:
+    0 0 20px rgba(236, 72, 153, 0.4),
+    0 0 35px rgba(56, 189, 248, 0.3);
+}

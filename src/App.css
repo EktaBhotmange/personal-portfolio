@@ -1,0 +1,31 @@
+:root {
+  --bg: #020617;
+  --text: #ffffff;
+}
+
+.light-theme {
+  --bg: #f8fafc;
+  --text: #0f172a;
+}
+
+.hero,
+.about,
+.skills,
+.projects,
+.resume,
+.contact {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.dark-theme {
+  --bg-color: #020617;
+  --card-color: #0f172a;
+  --text-color: #ffffff;
+}
+
+.light-theme {
+  --bg-color: #f8fafc;
+  --card-color: #ffffff;
+  --text-color: #0f172a;
+}

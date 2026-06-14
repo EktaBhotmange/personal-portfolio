@@ -1,0 +1,150 @@
+.resume {
+  background: #020617;
+  padding: 90px 8%;
+}
+
+/* HEADING */
+
+.resume h2 {
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.resume h2::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  bottom: -12px;
+
+  width: 110px;
+  height: 4px;
+
+  border-radius: 10px;
+
+  background: linear-gradient(
+    90deg,
+    #ec4899,
+    #8b5cf6,
+    #38bdf8
+  );
+}
+
+.resume-subtitle {
+  padding-top: 20px;
+  text-align: center;
+  color: #94a3b8;
+  margin-bottom: 60px;
+  font-size: 1rem;
+}
+
+.resume-container {
+  width: 100%;
+  max-width: 1000px;
+
+  margin: auto;
+
+  border-radius: 24px;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(56, 189, 248, 0.2);
+
+  box-shadow:
+    0 0 20px rgba(56, 189, 248, 0.08),
+    0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+.resume-frame {
+  width: 100%;
+  height: 850px;
+
+  border: none;
+
+  display: block;
+
+  background: white;
+}
+
+.resume-actions {
+  margin-top: 35px;
+
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  flex-wrap: wrap;
+}
+
+.download-btn {
+  text-decoration: none;
+
+  padding: 14px 28px;
+
+  border-radius: 12px;
+
+  color: white;
+
+  font-weight: 600;
+
+  background: linear-gradient(
+    135deg,
+    #ec4899,
+    #8b5cf6,
+    #2563eb
+  );
+
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 0 15px rgba(236, 72, 153, 0.25),
+    0 0 25px rgba(139, 92, 246, 0.2);
+}
+
+/* SECOND BUTTON */
+
+.secondary {
+  background: rgba(15, 23, 42, 0.9);
+
+  border: 1px solid rgba(56, 189, 248, 0.4);
+
+  color: #38bdf8;
+}
+
+.secondary:hover {
+  background: rgba(56, 189, 248, 0.08);
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .resume {
+    padding: 70px 6%;
+  }
+
+  .resume-frame {
+    height: 600px;
+  }
+
+  .resume-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .download-btn {
+    width: 220px;
+    text-align: center;
+  }
+}
