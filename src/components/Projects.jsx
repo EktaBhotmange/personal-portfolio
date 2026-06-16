@@ -8,7 +8,7 @@ function Projects() {
       description:
         "A modern art showcase website featuring paintings, portraits, customized gifts and handcrafted artworks.",
       image: "art-gallery.jpg",
-      github: "#",
+      github: "https://github.com/EktaBhotmange/art-gallery-website",
       demo: "#",
     },
 
